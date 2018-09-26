@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="draw.css">
 </head>
 <body>
   <button id = "again" onclick='window.location.href ="draw.html"'>Again?</button>
@@ -29,11 +30,11 @@
       console.log(res[i]);
       results = res;
 
-        var common = "<p>common</p>";
-        var uncommon = "<p>uncommon</p>";
-        var rare = "<p>rare</p>";
-        var epic = "<p>epic</p>";
-        var legendary = "<p>legendary</p>";
+        var common = "<p id = 'c'>common</p>";
+        var uncommon = "<p id = 'uc'>uncommon</p>";
+        var rare = "<p id = 'r'>rare</p>";
+        var epic = "<p id = 'e'>epic</p>";
+        var legendary = "<p id = 'l'>legendary</p>";
         for(i=0;i<=4;i++){
           console.log(results[i]);
             if(results[i]==1){
